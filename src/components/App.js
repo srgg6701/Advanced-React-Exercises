@@ -1,8 +1,13 @@
 import React from 'react';
-
+import CommentBox from './CommentBox';
+import CommentList from './CommentList';
 
 export default () => {
-    render(
-        <div>Hello again!</div>
+    return (
+        <React.Fragment>
+            <h1>Hello again!</h1>
+            <CommentBox />
+            <CommentList />
+        </React.Fragment>
     );
 }
