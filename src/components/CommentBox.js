@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+// imports actions/index.js objects
+import * as actions from 'actions';
 
-export default class CommentBox extends Component {
+class CommentBox extends Component {
     /* constructor(){
         super();
         this.handleTextarea = this.handleTextarea.bind(this);
@@ -13,8 +16,8 @@ export default class CommentBox extends Component {
     }
     handleSubmit = event => {
         event.preventDefault();
+        this.props.saveComment(this.state.comment);
         this.setState({ comment: '' });
-        
     }
     render() {
         return (
@@ -28,3 +31,5 @@ export default class CommentBox extends Component {
         )
     }
 }
+
+export default connect (null, actions)(CommentBox);
