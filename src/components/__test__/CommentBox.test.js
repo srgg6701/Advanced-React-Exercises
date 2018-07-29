@@ -20,22 +20,24 @@ it('has a button', () => {
     expect(wrapped.find('button').length).toEqual(1);
 });
 
-it('allows to write', () => {
-    const text = 'A new comment just came!';
-    wrapped.find('textarea').simulate('change', {
-        target: { value: text }
+describe('check form behavior', () => {
+    let text;
+    beforeEach(() => {
+        text = 'A new comment just came!';
+        wrapped.find('textarea').simulate('change', {
+            target: { value: text }
+        });
+        wrapped.update();        
     });
-    wrapped.update();
-    // ACHTUNG! It require to find textarea anytime, storing in the variable doesn't work.
-    expect(wrapped.find('textarea').prop('value')).toEqual(text);
-});
 
-it ('leaves form empty', () => {
-    wrapped.find('textarea').simulate('change', {
-        target: { value: 'Some string here' }
+    it('allows to write', () => {
+        // ACHTUNG! It require to find textarea anytime, storing in the variable doesn't work.
+        expect(wrapped.find('textarea').prop('value')).toEqual(text);
     });
-    wrapped.update();
-    wrapped.find('textarea').simulate('submit');
-    wrapped.update();
-    expect(wrapped.find('textarea').prop('value')).toBeFalsy();
+
+    it('leaves form empty', () => {
+        wrapped.find('textarea').simulate('submit');
+        wrapped.update();
+        expect(wrapped.find('textarea').prop('value')).toBeFalsy();
+    });
 });
