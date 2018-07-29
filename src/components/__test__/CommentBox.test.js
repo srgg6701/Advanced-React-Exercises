@@ -21,8 +21,21 @@ it('has a button', () => {
 });
 
 it('allows to write', () => {
-    const txtArea = wrapped.find('textarea');
-    txtArea.simulate('change', {
-        target: { value: 'A new comment just came!' }
+    const text = 'A new comment just came!';
+    wrapped.find('textarea').simulate('change', {
+        target: { value: text }
     });
+    wrapped.update();
+    // ACHTUNG! It require to find textarea anytime, storing in the variable doesn't work.
+    expect(wrapped.find('textarea').prop('value')).toEqual(text);
+});
+
+it ('leaves form empty', () => {
+    wrapped.find('textarea').simulate('change', {
+        target: { value: 'Some string here' }
+    });
+    wrapped.update();
+    wrapped.find('textarea').simulate('submit');
+    wrapped.update();
+    expect(wrapped.find('textarea').prop('value')).toBeFalsy();
 });
