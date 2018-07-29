@@ -16,6 +16,7 @@ class CommentBox extends Component {
     }
     handleSubmit = event => {
         event.preventDefault();
+        // store comes from above, see the chain startinf from Root.
         this.props.saveComment(this.state.comment);
         this.setState({ comment: '' });
     }
