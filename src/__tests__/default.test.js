@@ -12,11 +12,18 @@ describe('Check UI', () => {
         wrapped = shallow(<App/>);
     })
 
-    it('Check a button', () => {
+    it('should check if a button exist', () => {
         expect(wrapped.find(Button).length).toEqual(1);
     });
     
-    it('Check a textarea', () => {
+    it('should check if a textarea exist', () => {
         expect(wrapped.find(Textarea).length).toEqual(1);
     });
 });
+
+describe('Check form working', () => {
+  it('should clear form', () => {
+    Button.simulate('click');
+  })
+  
+})

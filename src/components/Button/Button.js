@@ -4,7 +4,7 @@ import './Button.css'
 export class Button extends Component {
   render() {
     return (
-      <button className={this.props.btnClass}>Submit</button>
+      <button className={this.props.btnClass} onClick={this.props.onClick}>Submit</button>
     )
   }
 }
