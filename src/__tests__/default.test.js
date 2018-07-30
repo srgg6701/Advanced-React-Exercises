@@ -1,4 +1,10 @@
+import React from 'react'
+import { shallow } from 'enzyme'
+import App from '../app'
+import Textarea from '../components/Textarea/Textarea'
+import Button from '../components/Button/Button'
 
 it('Just check it', () => {
-    expect(2*2).toEqual(4);
+    const wrapped = shallow(<App/>);
+    expect(wrapped.find(Button).length).toEqual(1);
 });
