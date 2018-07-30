@@ -2,6 +2,6 @@ import { combineReducers } from 'redux';
 import commentsReducer from 'reducers/comments';
 
 export default combineReducers({
-    commentsReducer: commentsReducer
+    comments: commentsReducer
 });
 
