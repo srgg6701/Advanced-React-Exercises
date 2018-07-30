@@ -8,6 +8,10 @@ it('handles actoins of type SAVE_COMMENT', () => {
     };
 
     const done = commentsReducer([], action);
-
     expect(done).toEqual(['New comment']);
+});
+
+it ('handles unknown type', () => {
+    const done = commentsReducer([], { type: 'alien' });
+    expect(done).toEqual([]);
 });
