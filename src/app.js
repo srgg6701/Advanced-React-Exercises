@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Textarea from './components/Textarea/Textarea'
 import Button from './components/Button/Button'
+import Comments from './components/Comments/Comments'
 
 export default class App extends Component {
   render() {
@@ -10,6 +11,8 @@ export default class App extends Component {
             <p>I am back.</p>
             <Textarea />
             <Button btnClass={'block'} />
+            <hr />
+            <Comments />
         </React.Fragment>
     )
   }
