@@ -9,22 +9,19 @@ export default class App extends Component {
         this.state = {
             contents: 'Empty'
         }
-        this.handleButtonClick = this.handleButtonClick.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
-    handleButtonClick() {
+    
+    handleChange(event) {
+        this.setState({ contents: event.target.value });
+    }
+
+    handleSubmit(event){
+        event.preventDefault();
         this.setState({
             contents: 'handled'
         });
-        console.log('Clicked');
-    }
-
-    showText() {
-        console.log('Which text?');
-    }
-
-    handleChange(event) {
-        this.setState({ contents: event.target.value });
     }
 
     render() {
@@ -33,15 +30,13 @@ export default class App extends Component {
                 <h1>Hello, boy!</h1>
                 <p>It gets funnier and funnier.</p>
                 <h4>I am back.</h4>
-                <Textarea value={this.state.contents} onChange={this.handleChange} />
-                <Button btnClass={'block'} onClick={this.handleButtonClick} />
-                <hr />
+                <form onSubmit={this.handleSubmit}>
+                    <Textarea value={this.state.contents} onChange={this.handleChange} />
+                    <Button btnClass={'block'} />
+                    <hr />
+                </form>
                 <Comments />
             </React.Fragment>
         )
     }
 }
-/*{ <hr />
-    <h4>My essay here:</h4>
-    <textarea value={this.state.contents} onChange={this.handleChange} />
-    <div>State contents: {this.state.contents}</div> }*/

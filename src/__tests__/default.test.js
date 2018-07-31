@@ -23,11 +23,11 @@ describe('Check UI shallow', () => {
         expect(wrapped.find(Textarea).length).toEqual(1);
     });
     
-    it('should clean form', () => {
+    /* it('should clean form', () => {
         wrapped.find(Button).simulate('click');
         wrapped.update();
         expect(wrapped.find(Textarea).prop('value')).toEqual(handled);
-    })
+    }) */
     
 });
 
@@ -47,8 +47,8 @@ describe('Check UI mount', () => {
         expect(wrapped.find('textarea').length).toEqual(1);
     });
     
-    it('should clean form', () => {
-        wrapped.find('button').simulate('click');
+    it('should clean form on submit', () => {
+        wrapped.find('form').simulate('submit');
         wrapped.update();
         expect(wrapped.find('textarea').prop('value')).toEqual(handled);
     })
