@@ -41,7 +41,7 @@ export default class App extends Component {
         )
     }
 }
-{/* <hr />
+/*{ <hr />
     <h4>My essay here:</h4>
     <textarea value={this.state.contents} onChange={this.handleChange} />
-    <div>State contents: {this.state.contents}</div> */}
+    <div>State contents: {this.state.contents}</div> }*/
