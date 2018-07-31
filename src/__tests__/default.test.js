@@ -5,6 +5,8 @@ import App from '../app'
 import Button from '../components/Button/Button'
 import Textarea from '../components/Textarea/Textarea'
 
+const handled = 'handled';
+
 describe('Check UI shallow', () => {
 
     let wrapped;
@@ -24,7 +26,7 @@ describe('Check UI shallow', () => {
     it('should clean form', () => {
         wrapped.find(Button).simulate('click');
         wrapped.update();
-        expect(wrapped.find(Textarea).prop('value')).toEqual('handled');
+        expect(wrapped.find(Textarea).prop('value')).toEqual(handled);
     })
     
 });
@@ -48,7 +50,7 @@ describe('Check UI mount', () => {
     it('should clean form', () => {
         wrapped.find('button').simulate('click');
         wrapped.update();
-        expect(wrapped.find('textarea').prop('value')).toEqual('handled');
+        expect(wrapped.find('textarea').prop('value')).toEqual(handled);
     })
 
 })
