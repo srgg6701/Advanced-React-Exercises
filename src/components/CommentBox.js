@@ -4,27 +4,35 @@ import { connect } from 'react-redux';
 import * as actions from 'actions';
 
 class CommentBox extends Component {
-    /* constructor(){
+    constructor(){
         super();
+        this.state = {
+            comment: ''
+        };
         this.handleTextarea = this.handleTextarea.bind(this);
-    } */
-    state = {
-        comment: ''
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
-    handleTextarea = event => {
+    
+    handleTextarea(event) {
         return this.setState({ 'comment' : event.target.value});
     }
+
     /**
      * It stores comments. The method saveComment comes from Root (Root.js).
      * It is defined in actions/index.js and is imported to here (see imports above)
      * Note that saveComment gets a property of this via *connect*
      */
-    handleSubmit = event => {
+    handleSubmit(event) {
         event.preventDefault();
         // ACTION creator; store comment 
         this.props.saveComment(this.state.comment);
         this.setState({ comment: '' });
     }
+
+    componentDidMount(){
+        console.log('props', this.props);
+    }
+
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
