@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import { mount } from 'enzyme'
 import App from '../app'
 import Button from '../components/Button/Button'
-import Textarea from '../components/Textarea/Textarea'
+import { Textarea } from '../components/Textarea/Textarea'
 
 const handled = 'handled';
 

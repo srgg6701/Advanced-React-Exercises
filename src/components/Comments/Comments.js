@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import actions from '../../actions'
 
 export default class Comments extends Component {
+
+    constructor(props){
+        super(props);
+        this.makeComments = this.makeComments.bind(this);
+    }
 
     makeComments(comments = {
         '20.07.2018' : 'First comment came',
@@ -15,11 +22,19 @@ export default class Comments extends Component {
         return html;
     }
 
+    /* componentWillReceiveProps(nextProps){
+        console.log(nextProps);
+    } */
+
     render() {
         return (
             <section>
                 {this.makeComments()}
+                <hr/>
+                {this.props.newComment}
             </section>
         )
     }
 }
+
+// export default connect(null, actions)(Comments);
