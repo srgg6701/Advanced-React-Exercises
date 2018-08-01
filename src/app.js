@@ -23,12 +23,15 @@ export default class App extends Component {
         event.preventDefault();
         this.setState({
             contents: 'handled',
-            submit: true
+            submit: 'done'
         });
     }
 
-    communicate(message){
-        console.log('message=>', message);
+    communicate(){
+        this.setState({
+            submit: ''
+        });
+        console.log('submitted');
     }
 
     render() {
@@ -38,7 +41,7 @@ export default class App extends Component {
                 <p>It gets funnier and funnier.</p>
                 <h4>I am back.</h4>
                 <form onSubmit={this.handleSubmit}>
-                    <Textarea goback={this.communicate} submit={this.state.submit} value={this.state.contents} onChange={this.handleChange} />
+                    <Textarea handlesubmit={this.communicate} submit={this.state.submit} value={this.state.contents} onChange={this.handleChange} />
                     <Button btnClass={'block'} />
                     <hr />
                 </form>

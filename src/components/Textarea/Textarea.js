@@ -1,6 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import actions from '../../actions'
+//import actions from '../../actions'
+import * as actions from '../../actions'
+
+console.log({actions});
 
 export class Textarea extends React.Component {
     constructor(){
@@ -8,22 +11,20 @@ export class Textarea extends React.Component {
         this.state = {
             comment: '',
             source: 'unknown'
-        };
-        // this.makeComments = this.makeComments.bind(this);
+        }; // this.handleSubmit = this.handleSubmit.bind(this);
     }
     
     componentWillReceiveProps(nextProps){
-        //console.log('componentWillReceiveProps, this', {prop:this.props, nextProps});
-        this.props.goback('Yo');
+        if (this.props.submit !== nextProps.submit && this.props.submit === '') {
+            this.props.handlesubmit();
+            console.log('next value', this.props.value);
+            this.props.saveComment(this.props.value);
+        }
     }
 
-    /* giveBack(){
-        this.giveBack('hello');
-    } */
-
-    /* handleSubmit(){
-        this.props.saveComment();
-    } */
+    componentDidMount(){
+        // console.log('%cprops', 'color: darkviolet', this.props);
+    }
 
     render(){
         return (
@@ -33,5 +34,9 @@ export class Textarea extends React.Component {
         );
     }
 }
-
+// connect to actions/index.js
+// the first argument is used if we have to map store states
+// we don't need it here as it just send comments regardless of the store state
+// the second argument dispateches store (?)
+// the explanation is here: https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options 
 export default connect(null, actions)(Textarea);
