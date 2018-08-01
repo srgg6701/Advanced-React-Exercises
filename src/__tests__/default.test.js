@@ -5,7 +5,7 @@ import App from '../app'
 import Button from '../components/Button/Button'
 import { Textarea } from '../components/Textarea/Textarea'
 
-const handled = 'handled';
+const handled = '';
 
 describe('Check UI shallow', () => {
 

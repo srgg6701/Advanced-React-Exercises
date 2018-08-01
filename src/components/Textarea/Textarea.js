@@ -3,27 +3,27 @@ import { connect } from 'react-redux'
 //import actions from '../../actions'
 import * as actions from '../../actions'
 
-console.log({actions});
-
-export class Textarea extends React.Component {
+// ACHTUNG!
+// • don't make export here, establish it through connect (look at the end of the file)!
+class Textarea extends React.Component {
     constructor(){
         super();
         this.state = {
             comment: '',
             source: 'unknown'
-        }; // this.handleSubmit = this.handleSubmit.bind(this);
+        };
     }
     
     componentWillReceiveProps(nextProps){
         if (this.props.submit !== nextProps.submit && this.props.submit === '') {
             this.props.handlesubmit();
-            console.log('next value', this.props.value);
+            // console.log('next value', this.props.value);
             this.props.saveComment(this.props.value);
         }
     }
 
     componentDidMount(){
-        // console.log('%cprops', 'color: darkviolet', this.props);
+        // console.log('%cprops', 'color: brown', this.props);
     }
 
     render(){

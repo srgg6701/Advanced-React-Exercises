@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Textarea } from './components/Textarea/Textarea'
+import Textarea from './components/Textarea/Textarea'
 import Button from './components/Button/Button'
 import Comments from './components/Comments/Comments'
 
@@ -7,7 +7,7 @@ export default class App extends Component {
     constructor() {
         super();
         this.state = {
-            contents: 'Empty',
+            contents: '',
             submit: ''
         }
         this.handleChange = this.handleChange.bind(this);
@@ -22,7 +22,7 @@ export default class App extends Component {
     handleSubmit(event){
         event.preventDefault();
         this.setState({
-            contents: 'handled',
+            contents: '',
             submit: 'done'
         });
     }
@@ -31,7 +31,7 @@ export default class App extends Component {
         this.setState({
             submit: ''
         });
-        console.log('submitted');
+        // console.log('submitted');
     }
 
     render() {

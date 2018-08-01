@@ -1,40 +1,27 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import actions from '../../actions'
 
-export default class Comments extends Component {
+class Comments extends Component {
 
-    constructor(props){
-        super(props);
-        this.makeComments = this.makeComments.bind(this);
-    }
-
-    makeComments(comments = {
-        '20.07.2018' : 'First comment came',
-        '22.07.2018' : 'Second comment came',
-        '29.07.2018' : 'Something strange came',
-        '30.07.2018' : 'I did not write this bullshit!',
-    }) {
-        let html = [];
-        Object.entries(comments).forEach(arr => {
-            html.push(<div key={arr[0]}>{arr[0]} : {arr[1]}</div>);
+    renderComments(){
+        return this.props.comments.map(comment => {
+            return <li key={comment}>{comment}</li>
         });
-        return html;
     }
-
-    /* componentWillReceiveProps(nextProps){
-        console.log(nextProps);
-    } */
 
     render() {
         return (
             <section>
-                {this.makeComments()}
-                <hr/>
-                {this.props.newComment}
+                <ul>
+                    { this.renderComments() }
+                </ul>
             </section>
         )
     }
 }
 
-// export default connect(null, actions)(Comments);
+function mapStateToProp(state){
+    return { comments: state.comments }
+}
+
+export default connect(mapStateToProp)(Comments);
