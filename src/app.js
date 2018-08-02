@@ -45,7 +45,7 @@ export default class App extends Component {
                     <Button btnClass={'block'} />
                     <hr />
                 </form>
-                <Comments newComment={this.state.contents} />
+                <Comments />
             </React.Fragment>
         )
     }

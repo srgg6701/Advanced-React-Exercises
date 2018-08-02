@@ -10,6 +10,7 @@ class Comments extends Component {
     }
 
     render() {
+        console.log('Comments props', this.props);
         return (
             <section>
                 <ul>
@@ -19,8 +20,12 @@ class Comments extends Component {
         )
     }
 }
-
+/**
+ * Assign references to redux store to this.props
+ * @param {Object} state 
+ */
 function mapStateToProp(state){
+    // this means: Comments.comments = redux state.comments
     return { comments: state.comments }
 }
 

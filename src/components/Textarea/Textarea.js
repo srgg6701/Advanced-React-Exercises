@@ -27,6 +27,7 @@ class Textarea extends React.Component {
     }
 
     render(){
+        console.log('Textarea props', this.props);
         return (
             <textarea value={this.props.value} onChange={this.props.onChange}
                 placeholder="Put your stuff here">
