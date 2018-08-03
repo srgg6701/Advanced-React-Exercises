@@ -6,8 +6,14 @@ import reducers from 'reducers';
 
 export default props => {
     return (
-        <Provider store={ createStore(reducers, {}) } >
-            { props.children}
+        <Provider store={ 
+            // an instance of redux store
+            // 1. store the state of the entire application
+            // 2. initial state
+            createStore(reducers, props.initialState)
+        }>{ 
+            props.children
+        }
         </Provider>
     );
 }

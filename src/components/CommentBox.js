@@ -30,7 +30,7 @@ class CommentBox extends Component {
     }
 
     componentDidMount(){
-        console.log('props', this.props);
+        console.log('this', this);
     }
 
     render() {
