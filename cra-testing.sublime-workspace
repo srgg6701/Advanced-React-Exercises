@@ -1,0 +1,406 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"return"
+			],
+			[
+				"rej",
+				"rejText"
+			],
+			[
+				"p",
+				"prop"
+			],
+			[
+				"fn",
+				"fnc"
+			],
+			[
+				"f",
+				"fnc"
+			],
+			[
+				"Ob",
+				"Object"
+			],
+			[
+				"ca",
+				"call"
+			],
+			[
+				"ba",
+				"barChild"
+			],
+			[
+				"s",
+				"src"
+			],
+			[
+				"fil",
+				"fileName"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"sc",
+				"script\tTag"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"pr",
+				"prototype"
+			],
+			[
+				"c",
+				"console"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"g",
+				"gHello"
+			],
+			[
+				"S",
+				"Shape"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"res",
+				"resize"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 416.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/sergei.klevtsov/Documents/Projects/Private/create-react-app-testing",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Private/create-react-app-testing/src"
+	],
+	"file_history":
+	[
+		"/C/Users/sergei.klevtsov/OneDrive - Accenture/Projects/Zoran/Tasks/task-howto.txt",
+		"/C/Users/sergei.klevtsov/Documents/Media/the-matrix-yify-english.srt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Private/create-react-app-testing/package.json",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/[React]/create-react-app-testing/node_modules/.bin/react-scripts",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/[React]/create-react-app-testing/node_modules/jest-config/package.json",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/[React]/create-react-app-testing/node_modules/jest-cli/package.json",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/[React]/create-react-app-testing/package.json",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/[React]/create-react-app-testing/local_profile.ps1",
+		"/C/Windows/System32/WindowsPowerShell/v1.0/PowerShell_ISE.exe",
+		"/C/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/themes/ABC_translate-business/css/styles.css",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/react-primitive/node_modules/watchpack/package.json",
+		"/C/Users/sergei.klevtsov/OneDrive - Accenture/Projects/Zoran/Tasks/VPI-569/Preleminary.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Business/AltaTranslation/Access/access.data",
+		"/C/Users/sergei.klevtsov/OneDrive/temp/SpeechTexter_065819.txt",
+		"/C/Users/sergei.klevtsov/OneDrive - Accenture/Projects/Zoran/Tasks/PWA Conversion Investigation/Pre-description.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/PWA/sw-precache/gulpfile.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/Dockerfile",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/Dockerfile-compile",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/PWA/sw-precache/package.json",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/PWA/sw-precache/demo/gulpfile.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/react-components-test-setup/package.json",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/minimal-react-webpack-babel-setup/src/index.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/create-react-app/my-app/src/index.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/create-react-app/my-app/src/index.css",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/preact-lined/src/style/index.css",
+		"/C/Users/sergei.klevtsov/OneDrive/IT/Git/commands.txt",
+		"/C/Users/sergei.klevtsov/OneDrive - Accenture/Projects/Zoran/Tasks/VPI-461, 462/Entitlement-data.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/themes/ABC_translate/css/style.css",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/themes/ABC_translate/css/temp.css",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/minimal-react-webpack-babel-setup/.babelrc",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/themes/ABC_translate/css/selectors.css",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/src/components/table/_StickyNavigation.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/src/components/table/sticky-navigation.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/src/components/table/_StickyExpander.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/src/components/table/sticky-expander.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/src/components/selected-pill/_selectedPill.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/src/components/selected-pill/selected-pill.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/test/cases/Table.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/test/bootstrap.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/test/main.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/test/utils.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/react-primitive/.babelrc",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/react-primitive/.gitignore",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/tut1/src/App.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/tut1/.not-in-use/manifest.json",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/tut1/manifest.json",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/.git/config",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/ts/.git/refs/heads/develop",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/test/test2/test-2.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/test/readme.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/test/test/test2.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/test/test2/test-1.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/test/test2/test0.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/test/test/test1.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/src/components/informer/Informer.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/test/package-lock.json",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/test/.gitignore",
+		"/C/Users/sergei.klevtsov/AppData/Roaming/npm-cache/_logs/2018-07-04T07_30_11_233Z-debug.log",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/development.json",
+		"/C/Users/sergei.klevtsov/OneDrive - Accenture/Projects/Zoran/Tasks/VPI-461, 462/localhost-1530537695550.log",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/zoran-ui/.vscode/settings.json",
+		"/C/Users/sergei.klevtsov/OneDrive/IT/React/8 Tips For Getting Better At React.txt",
+		"/C/Users/sergei.klevtsov/YandexDisk/education/js/Pluralsight. Advanced JavaScript/trials.js",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 6. Human Enchancement/notes.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Job/Adyen.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/anime/temp.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/anime/temp2.txt",
+		"/C/Users/sergei.klevtsov/OneDrive - Accenture/Projects/Zoran/_temp/2.2.2-group-eo-collapse.html",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/-React/react-boilerplate/package.json",
+		"/C/Users/sergei.klevtsov/Downloads/Zoran/ZoranDevelopment_SKlevstov_ZoranVPN.ovpn",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/themes/ABC_translate/overrides.css",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/themes/ABC_translate/css.css",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/index_files/5a7c2.css",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/.gitignore",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/index.html",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/index_files/vt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/index_files/common.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/redesign/index_files/saved_resource.html",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/contents/httpdocs/wp-content/themes/ABC_translate/index.php",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/Music-Is-My-Life/contents/tracks/tracks.json",
+		"/C/Users/sergei.klevtsov/YandexDisk/education/js/Pluralsight. Advanced JavaScript/02 Scope/code-samples.js",
+		"/C/Users/sergei.klevtsov/AppData/Local/Temp/_tc/readme.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/A Totalitarian Future of Free Society/Actual Stuff/Глава 6. Human Enchancement/notes.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/contents/httpdocs/wp-content/themes/ABC_translate/functions.php",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/contents/httpdocs/wp-content/themes/ABC_translate/header.php",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/contents/httpdocs/wp-content/themes/ABC_translate/header-page.php",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Articles/FB scandal/FB scandal.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/Идеалисты и нигилисты.txt",
+		"/C/Users/sergei.klevtsov/OneDrive - Accenture/Projects/Elkjöp/tasks/products, baloons.txt",
+		"//?/C:/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a Problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/sources/_Free speech, Hate Speech, Propaganda, Media & Totalitarianism/Free speech vs Hate speech/The Sordid Origin of Hate-Speech Laws.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/dev/index.html",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Articles/FB scandal/sources/Слушания в Сенате США/breakpoints.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Каприз.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/AdvancedLanguageHelper/server/index.js",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Articles/FB scandal/FB new rules 21.04.2018.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/altatranslation/contents.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Job/CV & resumes/Spring 2018/gorokovskaya@gmail.com/reqs.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/anime/scripts/washing-machine-dataname.html",
+		"/C/Users/sergei.klevtsov/Downloads/washing-machine-dataname (2).html",
+		"/C/Users/sergei.klevtsov/OneDrive/Business/AltaTranslation/Contents/access.data",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/0 Тезисы.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/1. Для кого это — проблема и до какой степени.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/2. Либералы, левые и тоталитаризм.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/3. Вперёд, к тоталитаризму.txt",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/Music-Is-My-Life/js/Views/tracks.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/Music-Is-My-Life/js/Models/app.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/Music-Is-My-Life/js/Models/tracks.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/Music-Is-My-Life/js/router.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/Music-Is-My-Life/js/config.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/Music-Is-My-Life/js/app.js",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Одинока и прекрасна в небе светится звезда",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Почки на кустах сирени",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Work/anime/scripts/pc-monitor-dataname.html",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/pseudo-liberal fascism.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Понедельник, понедельник",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Ночь себя укоротила.js",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/pseudo-liberal fascism",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Ёжик брёл туманною дорогой,",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/run.txt",
+		"/C/Program Files/BrowserstackLocal/4. Культура.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/4. Культура.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Луч к Медведу затесался",
+		"/C/Users/sergei.klevtsov/Documents/Projects/-Private/plays/source/scripts/html.js",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/3. Условия социального баланса.txt",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/План.txt",
+		"/C/Users/sergei.klevtsov/AppData/Roaming/Sublime Text 3/Packages/User/bullet  2.sublime-macro",
+		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/chapter 4 overview.txt"
+	],
+	"find":
+	{
+		"height": 41.3333333333
+	},
+	"find_in_files":
+	{
+		"height": 449.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"red ",
+			"red",
+			"red dress",
+			"machine",
+			"weakness",
+			"in red",
+			"blonde",
+			"instinct",
+			"red",
+			"blond",
+			"blonde",
+			"instinct",
+			"machines"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 40.0
+	},
+	"pinned_build_system": "",
+	"project": "cra-testing.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"advan",
+				"src\\pages\\overview\\advanced-filters.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 159.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

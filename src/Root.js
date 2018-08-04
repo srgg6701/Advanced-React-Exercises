@@ -4,15 +4,15 @@ import { createStore } from 'redux';
 // imports reducers/index.js
 import reducers from 'reducers';
 
-export default props => {
+export default ({ children, initialState }) => {
     return (
         <Provider store={ 
             // an instance of redux store
             // 1. store the state of the entire application
             // 2. initial state
-            createStore(reducers, props.initialState)
+            createStore(reducers, initialState)
         }>{ 
-            props.children
+            children
         }
         </Provider>
     );
