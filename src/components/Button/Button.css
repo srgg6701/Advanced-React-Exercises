@@ -1,0 +1,7 @@
+button{
+    padding: 6px 12px;
+}
+
+button.block{
+    display: block;
+}
