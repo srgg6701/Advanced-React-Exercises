@@ -1,8 +1,9 @@
 import React from 'react'
 import Buttons from './Buttons'
 // import store from '../store'
+import { connect } from 'react-redux'
 
-export default class App extends React.Component {
+class App extends React.Component {
 
     constructor(props) {
         super(props)
@@ -11,11 +12,11 @@ export default class App extends React.Component {
             count: 0
         }
 
-        store.subscribe(() => {
+        /*store.subscribe(() => {
             this.setState({
                 count: store.getState()
             });
-        });
+        });*/
     }
 
     render() {
@@ -24,10 +25,16 @@ export default class App extends React.Component {
             <React.Fragment>
                 <div>Hello again!</div>
                 <hr />
-                Look here: {store.getState()}
+                Look here: {this.props.count}
                 <hr />
                 <Buttons />
             </React.Fragment>
         )
     }
 }
+
+function mapStateToProps(state) {
+    return { count: state.count }
+}
+
+export default connect(mapStateToProps)(App)

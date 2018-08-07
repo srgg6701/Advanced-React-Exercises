@@ -1,4 +1,4 @@
-const defaultReducer = (state = 0, action) =>{
+const defaultReducer = (state = 0, action) => {
     switch (action.type) {
         case 'INCREMENT':
             return state + 1;
