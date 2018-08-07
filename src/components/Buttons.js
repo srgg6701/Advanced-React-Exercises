@@ -1,20 +1,17 @@
 import React from 'react'
-// import Redux from 'react-redux'
-// import defaultReducer from '../reducers/default'
 import defaultAction from '../actions/default'
 
-const Buttons = () => {
-  const clickToAct = (action) => {
-    console.log('Button clicked!', action);
-    defaultAction(action);
+export default class Buttons extends React.Component {
+  clickToAct(event) {
+    defaultAction(event.target.dataset.action);
   }
-  return (
-    <React.Fragment>
-      <button onClick={ clickToAct('DECREMENT') }>Decrease</button>
-        &nbsp;
-      <button onClick={ clickToAct('INCREMENT') }>Increase</button>
-    </React.Fragment>
-  )
+  render() {
+    return (
+      <React.Fragment>
+        <button data-action='DECREMENT' onClick={this.clickToAct}>Decrease</button>
+          &nbsp;
+        <button data-action='INCREMENT' onClick={this.clickToAct}>Increase</button>
+      </React.Fragment>
+    )
+  }
 }
-
-export default Buttons

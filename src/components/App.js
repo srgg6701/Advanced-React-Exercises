@@ -6,26 +6,17 @@ export default class App extends React.Component {
 
     constructor(props) {
         super(props)
-        console.log(store);
+        
         this.state = {
             count: 0
         }
 
-        //this.count = this.count.bind(this);
-        console.log('store => ', store);
-        /* store.subscribe(() => {
-            this.state.count = store.getState();
-        }); */
+        store.subscribe(() => {
+            this.setState({
+                count: store.getState()
+            });
+        });
     }
-
-    /* count(action) {
-        
-        if (action === 'INCREMENT') {
-            
-        } else if (action === 'DECREMENT') {
-            this.state.count--;
-        }  
-    }*/
 
     render() {
 
@@ -33,7 +24,7 @@ export default class App extends React.Component {
             <React.Fragment>
                 <div>Hello again!</div>
                 <hr />
-                Look here: {this.state.count}
+                Look here: {store.getState()}
                 <hr />
                 <Buttons />
             </React.Fragment>
