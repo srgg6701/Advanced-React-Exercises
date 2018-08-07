@@ -9,7 +9,7 @@ import App from './components/App'
 console.log({React, ReactDOM, Provider, store, defaultReducer});
 
 ReactDOM.render(
-	<Provider store={createStore(defaultReducer)}>
+	<Provider store={createStore(defaultReducer, {})}>
     	<App />
     </Provider>, document.getElementById('root')
 );
