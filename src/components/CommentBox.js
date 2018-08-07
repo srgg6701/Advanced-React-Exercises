@@ -25,6 +25,7 @@ class CommentBox extends Component {
     handleSubmit(event) {
         event.preventDefault();
         // ACTION creator; store comment 
+        console.log('handleSubmit', {props:this.props,state:this.state});
         this.props.saveComment(this.state.comment);
         this.setState({ comment: '' });
     }
@@ -47,7 +48,7 @@ class CommentBox extends Component {
 }
 // connect to actions/index.js
 // the first argument is used if we have to map store states
-// we don't need it here as it just send comments regardless of the store state
+// we don't need it here as it just sends comments regardless of the store state
 // the second argument dispateches store (?)
 // the explanation is here: https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options 
 export default connect (null, actions)(CommentBox);
