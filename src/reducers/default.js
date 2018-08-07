@@ -1,4 +1,4 @@
-function defaultReducer(state = [], action) {
+const defaultReducer = (state = [], action) =>{
     switch (action.type) {
         case 'INCREMENT':
             return state + 1;
@@ -8,3 +8,4 @@ function defaultReducer(state = [], action) {
             return state;
     }
 }
+export default defaultReducer; 
