@@ -1,6 +1,6 @@
 import React from 'react'
 import Buttons from './Buttons'
-import store from '../store'
+// import store from '../store'
 
 export default class App extends React.Component {
 
