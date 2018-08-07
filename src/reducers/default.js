@@ -1,9 +1,9 @@
-const defaultReducer = (state = [], action) =>{
+const defaultReducer = (state = 0, action) =>{
     switch (action.type) {
         case 'INCREMENT':
-            return parseInt(state + 1);
+            return state + 1;
         case 'DECREMENT':
-            return parseInt(state - 1);
+            return state - 1;
         default:
             return state;
     }

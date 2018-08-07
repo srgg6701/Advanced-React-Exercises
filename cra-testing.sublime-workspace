@@ -91,38 +91,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "babel-preset-es2015",
-			"settings":
-			{
-				"buffer_size": 19,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/sergei.klevtsov/Documents/Projects/Private/minimal-react-webpack-babel-setup/webpack.config.js",
-			"settings":
-			{
-				"buffer_size": 543,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/sergei.klevtsov/Documents/Projects/Private/minimal-react-webpack-babel-setup/package.json",
-			"settings":
-			{
-				"buffer_size": 1002,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/index.js",
-			"settings":
-			{
-				"buffer_size": 162,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -162,12 +130,14 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/C/Users/sergei.klevtsov/Documents/Projects/Private/create-react-app-testing"
-	],
 	"file_history":
 	[
+		"/C/Users/sergei.klevtsov/Documents/Projects/Private/redux-exp/scripts/default.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Private/redux-exp/scripts/create-store.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Private/minimal-react-webpack-babel-setup/package.json",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Private/minimal-react-webpack-babel-setup/webpack.config.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Private/create-react-app-testing/src/index.js",
+		"/C/Users/sergei.klevtsov/Documents/Projects/Private/redux/examples/async/src/containers/App.js",
 		"/C/Users/sergei.klevtsov/Documents/Projects/Private/create-react-app/package.json",
 		"/C/Users/sergei.klevtsov/Documents/Projects/Private/react-redux-boilerplate/package.json",
 		"/C/Users/sergei.klevtsov/Documents/Projects/Private/redux/examples/todos/package.json",
@@ -289,13 +259,7 @@
 		"/C/Users/sergei.klevtsov/Documents/Projects/Work/anime/scripts/pc-monitor-dataname.html",
 		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/pseudo-liberal fascism.txt",
 		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Понедельник, понедельник",
-		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Ночь себя укоротила.js",
-		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/pseudo-liberal fascism",
-		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Ёжик брёл туманною дорогой,",
-		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/run.txt",
-		"/C/Program Files/BrowserstackLocal/4. Культура.txt",
-		"/C/Users/sergei.klevtsov/OneDrive/Projects/Homo Sapiens as a problem/Book_ru/Actual Stuff/Глава 4. Почему это -- проблема и для кого именно/texts/4. Культура.txt",
-		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Луч к Медведу затесался"
+		"/C/Users/sergei.klevtsov/OneDrive/Документы/Письма и стихи/Стихи, по нечётным, от Медведа/Ночь себя укоротила.js"
 	],
 	"find":
 	{
@@ -313,6 +277,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"createStore",
+			"connect",
 			"getState",
 			"red ",
 			"red",
@@ -344,124 +310,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								19
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/sergei.klevtsov/Documents/Projects/Private/minimal-react-webpack-babel-setup/webpack.config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 543,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								543
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/sergei.klevtsov/Documents/Projects/Private/minimal-react-webpack-babel-setup/package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1002,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								933,
-								994
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 180.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 162,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								162,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -546,7 +396,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 50.0,
+	"side_bar_width": 209.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
