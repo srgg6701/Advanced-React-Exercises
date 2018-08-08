@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 class CommentList extends React.Component{
     renderComments(){
-        return this.props.allcomments.map(comment => {
+        return this.props.comments.map(comment => {
             return <li key={comment}>{comment}</li>
         });
     }
@@ -20,7 +20,7 @@ class CommentList extends React.Component{
 
 function mapStateToProps(state, ownProps){
     console.log('mapStateToProps is run...', { state, ownProps });
-    return { allcomments: state.comments }
+    return { comments: state.comments }
 }
 
 export default connect(mapStateToProps)(CommentList)
