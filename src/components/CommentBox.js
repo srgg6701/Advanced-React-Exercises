@@ -1,7 +1,20 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // imports actions/index.js objects
-import * as actions from 'actions';
+// actions.saveComment
+// import * as actions from 'actions';
+const SAVE_COMMENT = 'save comment';
+
+// is not calld initially
+const actions = {
+    saveComment(comment) {
+        console.log('%cSave Comment is run!', 'color:orangered');
+        return {
+            type: SAVE_COMMENT,
+            payload: comment
+        }
+    }
+}
 
 class CommentBox extends Component {
     constructor(){
@@ -11,6 +24,7 @@ class CommentBox extends Component {
         };
         this.handleTextarea = this.handleTextarea.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        console.log('%ccalling constructor in CommentBox. Actions => ', 'background: lightyellow', actions);
     }
     
     handleTextarea(event) {
@@ -25,13 +39,18 @@ class CommentBox extends Component {
     handleSubmit(event) {
         event.preventDefault();
         // ACTION creator; store comment 
-        console.log('handleSubmit', {props:this.props,state:this.state});
+        console.log('handleSubmit', {props:this.props,state:this.state,actions});
+        // calls the action creator in actions/index
+        // in the same time, that function is considered as dispatch
+        // because it is passed into Provider through connect
+        // returns Object (type, payload).
+        // so, this.props is equal actions here
         this.props.saveComment(this.state.comment);
         this.setState({ comment: '' });
     }
 
     componentDidMount(){
-        console.log('this', this);
+        // console.log('this', this);
     }
 
     render() {
