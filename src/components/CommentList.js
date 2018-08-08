@@ -20,7 +20,7 @@ class CommentList extends React.Component{
 
 function mapStateToProps(state, ownProps){
     console.log('mapStateToProps is run...', { state, ownProps });
-    return { comments: state.comments }
+    return { allcomments: state.comments }
 }
 
 export default connect(mapStateToProps)(CommentList)
