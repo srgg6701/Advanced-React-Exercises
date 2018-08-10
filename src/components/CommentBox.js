@@ -24,7 +24,7 @@ class CommentBox extends Component {
         };
         this.handleTextarea = this.handleTextarea.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        console.log('%ccalling constructor in CommentBox. Actions => ', 'background: lightyellow', actions);
+        // console.log('%ccalling constructor in CommentBox. Actions => ', 'background: lightyellow', actions);
     }
     
     handleTextarea(event) {
