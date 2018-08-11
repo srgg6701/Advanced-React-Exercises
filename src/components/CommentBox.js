@@ -11,7 +11,7 @@ class CommentBox extends Component {
         };
         this.handleTextarea = this.handleTextarea.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        console.log({actions, this:this});
+        // console.log({actions, this:this});
     }
 
     handleTextarea(event) {
@@ -26,13 +26,13 @@ class CommentBox extends Component {
     handleSubmit(event) {
         event.preventDefault();
         // ACTION creator; store comment 
-        console.log('handleSubmit', { props: this.props, state: this.state });
+        // console.log('handleSubmit', { props: this.props, state: this.state });
         this.props.saveComment(this.state.comment);
         this.setState({ comment: '' });
     }
 
     componentDidMount() {
-        console.log('this', this);
+        // console.log('this', this);
     }
 
     render() {

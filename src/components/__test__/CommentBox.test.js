@@ -22,7 +22,7 @@ it('has a textarea', () => {
 });
 
 it('has a button', () => {
-    expect(wrapped.find('button').length).toEqual(1);
+    expect(wrapped.find('button').length).toEqual(2);
 });
 
 describe('check form behavior', () => {
