@@ -1,22 +1,23 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import React from 'react'
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware, compose } from 'redux'
+import reduxPromise from 'redux-promise'
 // imports reducers/index.js
-import reducers from 'reducers';
+import reducers from 'reducers'
 
 export default ({ children, initialState }) => {
-    return (
-        <Provider store={ 
-            // an instance of redux store
-            // 1. store the state of the entire application
-            // 2. initial state
-            createStore(  // create store  
+    // add redux debugging tool. https://github.com/zalmoxisus/redux-devtools-extension#usage
+    const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+    // an instance of redux store
+    // 1. store the state of the entire application
+    // 2. initial state
+    const store = createStore(  // create store  
                 reducers, 
                 initialState,
-                // redux debugging tool. https://github.com/zalmoxisus/redux-devtools-extension#usage
-                window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-            )
-        }>{ 
+                composeEnhancers(applyMiddleware(reduxPromise))
+            );    
+    return (
+        <Provider store={ store }>{ 
             children
         }
         </Provider>
