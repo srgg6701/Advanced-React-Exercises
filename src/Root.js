@@ -10,7 +10,12 @@ export default ({ children, initialState }) => {
             // an instance of redux store
             // 1. store the state of the entire application
             // 2. initial state
-            createStore(reducers, initialState)
+            createStore(  // create store  
+                reducers, 
+                initialState,
+                // redux debugging tool. https://github.com/zalmoxisus/redux-devtools-extension#usage
+                window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+            )
         }>{ 
             children
         }
