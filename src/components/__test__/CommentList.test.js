@@ -23,7 +23,7 @@ beforeEach(() => {
 }) */
 
 it('creates one LI comment', () => {
-    expect(wrapped.find('textarea').length).toEqual(1);
+    expect(wrapped.find('ul').length).toEqual(1);
 });
 
 /* it('has a button', () => {
