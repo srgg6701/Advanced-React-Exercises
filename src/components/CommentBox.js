@@ -4,17 +4,18 @@ import { connect } from 'react-redux';
 import * as actions from 'actions';
 
 class CommentBox extends Component {
-    constructor(){
+    constructor() {
         super();
         this.state = {
             comment: ''
         };
         this.handleTextarea = this.handleTextarea.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        console.log({actions, this:this});
     }
-    
+
     handleTextarea(event) {
-        return this.setState({ 'comment' : event.target.value});
+        return this.setState({ 'comment': event.target.value });
     }
 
     /**
@@ -25,30 +26,35 @@ class CommentBox extends Component {
     handleSubmit(event) {
         event.preventDefault();
         // ACTION creator; store comment 
-        console.log('handleSubmit', {props:this.props,state:this.state});
+        console.log('handleSubmit', { props: this.props, state: this.state });
         this.props.saveComment(this.state.comment);
         this.setState({ comment: '' });
     }
 
-    componentDidMount(){
+    componentDidMount() {
         console.log('this', this);
     }
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <h4>Hello. Put comment here</h4>
-                <textarea onChange={this.handleTextarea} value={ this.state.comment } />
-                <div>
-                    <button>Submit it</button>
-                </div>
-            </form>
+            <div>
+                <form onSubmit={this.handleSubmit}>
+                    <h4>Hello. Put comment here</h4>
+                    <textarea onChange={this.handleTextarea} value={this.state.comment} />
+                    <div>
+                        <button>Submit it</button>
+                    </div>
+                </form>
+                <button onClick={this.props.fetchComments}>Fetch comments</button>
+            </div>
         )
     }
 }
-// connect to actions/index.js
-// the first argument is used if we have to map store states
-// we don't need it here as it just sends comments regardless of the store state
-// the second argument dispateches store (?)
-// the explanation is here: https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options 
-export default connect (null, actions)(CommentBox);
+/*  connect to actions/index.js
+    ---------------------------
+    the first argument is used if we have to map store states, i.e., point which
+    data we get back to update this.props.
+    We don't need it here as it just sends comments regardless of the store state
+    the second argument dispateches store (?)
+    the explanation is here: https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options */
+export default connect(null, actions)(CommentBox);
