@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // imports actions/index.js objects
 import * as actions from 'actions';
+import requireAuth from 'components/requireAuth';
 
 class CommentBox extends Component {
     constructor() {
@@ -11,24 +12,7 @@ class CommentBox extends Component {
         };
         this.handleTextarea = this.handleTextarea.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        // console.log({actions, this:this});
-    }
-
-    componentDidMount(){
-        this.shouldNavigateAway();
-    }
-
-    componentDidUpdate(){
-        this.shouldNavigateAway();
-    }
-
-    shouldNavigateAway(){
-        if (!this.props.auth) {
-            console.log('%cTime to say goodbye!', 'color: rebeccapurple');
-            this.props.history.push('/');
-        } else {
-            console.log('%cHOME, sweet HOME...', 'color: green');
-        }
+        console.log('this',this);
     }
 
     handleTextarea(event) {
@@ -66,9 +50,6 @@ class CommentBox extends Component {
         )
     }
 }
-function mapStateToProps(state){
-    return { auth: state.auth }
-}
 
 /*  connect to actions/index.js
     ---------------------------
@@ -77,4 +58,4 @@ function mapStateToProps(state){
     We don't need it here as it just sends comments regardless of the store state
     the second argument dispateches store (?)
     the explanation is here: https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options */
-export default connect(mapStateToProps, actions)(CommentBox);
+export default connect(null, actions)(requireAuth(CommentBox));
