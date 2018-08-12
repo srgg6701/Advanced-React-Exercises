@@ -23,7 +23,11 @@ class CommentBox extends Component {
     }
 
     shouldNavigateAway(){
-        console.log('Time to say goodbye!');
+        if (!this.props.auth) {
+            console.log('%cTime to say goodbye!', 'color: rebeccapurple');
+        } else {
+            console.log('%cHOME, sweet HOME...', 'color: green');
+        }
     }
 
     handleTextarea(event) {
@@ -41,10 +45,6 @@ class CommentBox extends Component {
         // console.log('handleSubmit', { props: this.props, state: this.state });
         this.props.saveComment(this.state.comment);
         this.setState({ comment: '' });
-    }
-
-    componentDidMount() {
-        // console.log('this', this);
     }
 
     render() {
@@ -65,6 +65,10 @@ class CommentBox extends Component {
         )
     }
 }
+function mapStateToProps(state){
+    return { auth: state.auth }
+}
+
 /*  connect to actions/index.js
     ---------------------------
     the first argument is used if we have to map store states, i.e., point which
@@ -72,4 +76,4 @@ class CommentBox extends Component {
     We don't need it here as it just sends comments regardless of the store state
     the second argument dispateches store (?)
     the explanation is here: https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options */
-export default connect(null, actions)(CommentBox);
+export default connect(mapStateToProps, actions)(CommentBox);
