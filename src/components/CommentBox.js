@@ -25,6 +25,7 @@ class CommentBox extends Component {
     shouldNavigateAway(){
         if (!this.props.auth) {
             console.log('%cTime to say goodbye!', 'color: rebeccapurple');
+            this.props.history.push('/');
         } else {
             console.log('%cHOME, sweet HOME...', 'color: green');
         }
