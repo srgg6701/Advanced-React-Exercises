@@ -6,6 +6,7 @@ import CommentList from 'components/CommentList'
 import * as actions from 'actions'
 
 class App extends Component {
+    
     renderButton(){
         if(this.props.auth){
             return <button onClick={() => this.props.changeAuth(false)}>Sign Out</button>

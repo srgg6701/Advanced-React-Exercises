@@ -14,6 +14,18 @@ class CommentBox extends Component {
         // console.log({actions, this:this});
     }
 
+    componentDidMount(){
+        this.shouldNavigateAway();
+    }
+
+    componentDidUpdate(){
+        this.shouldNavigateAway();
+    }
+
+    shouldNavigateAway(){
+        console.log('Time to say goodbye!');
+    }
+
     handleTextarea(event) {
         return this.setState({ 'comment': event.target.value });
     }

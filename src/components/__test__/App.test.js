@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import Root from 'Root';
 import App from 'components/App';
 import CommentBox from 'components/CommentBox';
 import CommentList from 'components/CommentList';
@@ -7,7 +8,11 @@ import CommentList from 'components/CommentList';
 let wrapped;
 
 beforeEach(() => {
-    wrapped = shallow(<App />);
+    wrapped = shallow(
+        <Root>
+            <App />
+        </Root>
+    );
 });
 
 it('shows the comment box', () => {
