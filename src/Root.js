@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware, compose } from 'redux'
 // import reduxPromise from 'redux-promise'
 import async from 'middlewares/async'
+import stateValidator from './middlewares/stateValidator'
 // imports reducers/index.js
 import reducers from 'reducers'
 
@@ -15,7 +16,7 @@ export default ({ children, initialState }) => {
     const store = createStore(  // create store  
                 reducers, 
                 initialState,
-                composeEnhancers(applyMiddleware(async))
+                composeEnhancers(applyMiddleware(async, stateValidator))
             );    
     return (
         <Provider store={ store }>{ 

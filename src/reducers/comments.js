@@ -5,7 +5,7 @@ export default function(state = [], action) {
     switch (action.type) {
         case SAVE_COMMENT:
             // adds action.payload to state (concatenate)
-            return [...state, action.payload];
+            return [...state, action.payload, {name:'Dude'}];
         case FETCH_COMMENTS:
             const comments = action.payload.data.map(comment => comment.name);
             return [...state, ...comments];
