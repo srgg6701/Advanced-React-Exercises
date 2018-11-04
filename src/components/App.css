@@ -1,0 +1,18 @@
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a {
+    display: block;
+    padding: 4px 6px;
+}
+
+nav li +li a{
+    border-left: solid 1px #ccc;
+}
