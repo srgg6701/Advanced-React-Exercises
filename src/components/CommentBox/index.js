@@ -6,7 +6,7 @@ export default class CommentBox extends PureComponent {
     return (
       <React.Fragment>
         <h4>Comment Box</h4>
-        <div>
+        <div className="container">
           CommentBox comes here
       </div>
       </React.Fragment>
