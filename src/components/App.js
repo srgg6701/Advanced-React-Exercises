@@ -20,12 +20,12 @@ export default class App extends React.Component {
                 <nav>
                     <ul>
                     <li><Link to="/">Home</Link></li>
-                    {setLinksData(linkData => <li><Link to={linkData[0]}>{linkData[1]}</Link></li>)}
+                    {setLinksData(linkData => <li key={linkData[0]}><Link to={linkData[0]}>{linkData[1]}</Link></li>)}
                     </ul>
                 </nav>
                 <hr />
                 <h3>Hello again!</h3>
-                {setLinksData(linkData => <Route path={'/'+linkData[0]} component={linkData[2]} />)}
+                {setLinksData(linkData => <Route key={linkData[0]} path={'/'+linkData[0]} component={linkData[2]} />)}
             </React.Fragment>
         )
     }
