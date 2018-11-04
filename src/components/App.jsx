@@ -14,6 +14,15 @@ function setLinksData(callback) {
 }
 
 export default class App extends React.Component {
+    loadComponent = () => {
+        import('./BigStory')
+            .then(BigStory => {
+                console.log('BigStory', BigStory);
+            })
+            .catch(err => {
+                // Handle failure
+            });
+    }
     render() {
         return (
             <React.Fragment>
@@ -21,6 +30,7 @@ export default class App extends React.Component {
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         {setLinksData(linkData => <li key={linkData[0]}><Link to={linkData[0]}>{linkData[1]}</Link></li>)}
+                        <li><a href="#" onClick={this.loadComponent}>Big Story</a></li>
                     </ul>
                 </nav>
                 <hr />

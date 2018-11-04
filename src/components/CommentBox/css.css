@@ -1,6 +1,6 @@
 h4{
     color: darkred;
 }
-.container{
+:local(.container){
     color: violet;
 }
