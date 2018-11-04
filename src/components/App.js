@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Link } from "react-router-dom";
-import CommentBox from "./CommentBox";
-import CommentList from './CommentList';
+import CommentBox from "./CommentBox/";
+import CommentList from './CommentList/';
 
 const LINKS = [
     ['box', 'Comment box', CommentBox],
@@ -17,6 +17,7 @@ export default class App extends React.Component {
         return (
             <React.Fragment>
                 <nav>
+                    <Link to="/">Home</Link>
                     {setLinksData(linkData => <Link to={linkData[0]}>{linkData[1]}</Link>)}
                 </nav>
                 <hr />
