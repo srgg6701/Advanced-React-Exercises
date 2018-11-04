@@ -1,16 +1,10 @@
-import React from 'react';
-import { Route, Link } from "react-router-dom";
-import CommentBox from "./CommentBox";
-import CommentList from './CommentList';
-import './App.css';
+import React, { Suspense } from 'react'
+import { Route, Link } from 'react-router-dom'
+import CommentBox from "./CommentBox"
+import CommentList from './CommentList'
+import './App.css'
 
-import('./BigStory')
-    .then(BigStory => {
-        console.log('BigStory', BigStory);
-    })
-    .catch(err => {
-        // Handle failure
-    });
+const BigStory = React.lazy(() => import('./BigStory'));
 
 const LINKS = [
     ['box', 'Comment box', CommentBox],
@@ -22,15 +16,17 @@ function setLinksData(callback) {
 }
 
 export default class App extends React.Component {
-    /* loadComponent = () => {
-        import('./BigStory')
-            .then(BigStory => {
-                console.log('BigStory', BigStory);
-            })
-            .catch(err => {
-                // Handle failure
-            });
-    } */
+    constructor() {
+        super();
+        this.state = {
+
+        }
+    }
+    getLazyContents = () => {
+        this.setState({
+            story: !this.state.story
+        });
+    }
     render() {
         return (
             <React.Fragment>
@@ -38,12 +34,18 @@ export default class App extends React.Component {
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         {setLinksData(linkData => <li key={linkData[0]}><Link to={linkData[0]}>{linkData[1]}</Link></li>)}
-                        {/* <li><a href="#" onClick={this.loadComponent}>Big Story</a></li> */}
                     </ul>
                 </nav>
                 <hr />
                 <h3>Hello again!</h3>
                 {setLinksData(linkData => <Route key={linkData[0]} path={'/' + linkData[0]} component={linkData[2]} />)}
+                <hr />
+                <button onClick={this.getLazyContents}>{ this.state.story ? "Got LAZY!" : "Get lazy..." }</button>
+                {this.state.story &&
+                    <Suspense fallback={<div>Loading...</div>}>
+                        <BigStory />
+                    </Suspense>
+                }
             </React.Fragment>
         )
     }

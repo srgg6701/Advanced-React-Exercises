@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './css.css';
-console.log('styles', styles);
+
 export default class CommentList extends Component {
     render() {
         return (
