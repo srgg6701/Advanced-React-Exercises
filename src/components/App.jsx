@@ -19,7 +19,6 @@ export default class App extends React.Component {
     constructor() {
         super();
         this.state = {
-
         }
     }
     getLazyContents = () => {
@@ -27,6 +26,11 @@ export default class App extends React.Component {
             story: !this.state.story
         });
     }
+
+    getCounted = () => {
+        console.log('Yo! They have counted you as well...');
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -43,7 +47,7 @@ export default class App extends React.Component {
                 <button onClick={this.getLazyContents}>{ this.state.story ? "Got LAZY!" : "Get lazy..." }</button>
                 {this.state.story &&
                     <Suspense fallback={<div>Loading...</div>}>
-                        <BigStory />
+                        <BigStory countMe={this.getCounted} />
                     </Suspense>
                 }
             </React.Fragment>
