@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Link } from "react-router-dom";
-import CommentBox from "./CommentBox/";
-import CommentList from './CommentList/';
+import CommentBox from "./CommentBox";
+import CommentList from './CommentList';
 import './App.css';
 
 const LINKS = [
