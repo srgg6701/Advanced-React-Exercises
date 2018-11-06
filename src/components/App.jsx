@@ -1,19 +1,9 @@
 import React, { Suspense } from 'react'
 import { Route, Link } from 'react-router-dom'
-import CommentBox from "./CommentBox"
-import CommentList from './CommentList'
+import setLinksData from './Menu'
 import './App.css'
 
 const BigStory = React.lazy(() => import('./BigStory'));
-
-const LINKS = [
-    ['box', 'Comment box', CommentBox],
-    ['list', 'Comment list', CommentList]
-];
-
-function setLinksData(callback) {
-    return LINKS.map(linkData => callback(linkData));
-}
 
 export default class App extends React.Component {
     constructor() {
