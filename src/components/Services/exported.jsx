@@ -9,7 +9,7 @@ export default (ChildComponent, Text) => {
         render() {
             return (
                 <ChildComponent {...this.props}>
-                    {this.props.children}
+                    <h5>Hardcoded ChildComponent content here</h5>
                 </ChildComponent>
             )
         }
