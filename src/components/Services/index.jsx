@@ -9,10 +9,5 @@ export default ChildComponent => {
             )
         }
     }
-    function mapStateToProps(state){
-        return {
-            serviceData: state.service
-        }
-    }
-    return connect(mapStateToProps)(Service);
+    return Service;
 }
