@@ -4,6 +4,7 @@ import setLinksData from './Menu'
 import ServiceExported from './Services/exported'
 import SimpleConsumer from './Consumer/SimpleConsumer'
 import SimpleConsumer2 from './Consumer/SimpleConsumer2'
+import SimpleConsumerConnected from './Consumer/SimpleConsumerConnected'
 import './App.css'
 
 const BigStory = React.lazy(() => import('./BigStory'));
@@ -49,6 +50,8 @@ export default class App extends React.Component {
                 <h4>Services here!</h4>
                 <Consumer consumerName="Dude" />
                 <Consumer2 consumerLastName="Lebowsky" />
+                <h4>SimpleConsumerConnected</h4>
+                <SimpleConsumerConnected />
             </React.Fragment>
         )
     }
