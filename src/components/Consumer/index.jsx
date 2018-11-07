@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Service from '../Services'
+import Service from '../Services/exported'
 
 class Consumer extends Component {
     constructor(props) {

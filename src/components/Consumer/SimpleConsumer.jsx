@@ -8,6 +8,8 @@ export default class SimpleConsumer extends Component {
                 <div>
                     Hi, Dude. Yes, I am simple. Bud good one!
                 </div>
+                <h5>Children, supposedly, here:</h5>
+                {this.children}
             </React.Fragment>
         )
     }

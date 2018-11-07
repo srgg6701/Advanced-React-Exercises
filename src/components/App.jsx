@@ -1,12 +1,12 @@
 import React, { Suspense } from 'react'
 import { Route, Link } from 'react-router-dom'
 import setLinksData from './Menu'
-import Service from './Services/'
+import ServiceExported from './Services/exported'
 import SimpleConsumer from './Consumer/SimpleConsumer'
 import './App.css'
 
 const BigStory = React.lazy(() => import('./BigStory'));
-const Consumer = Service(SimpleConsumer);
+const Consumer = ServiceExported(SimpleConsumer);
 
 export default class App extends React.Component {
     constructor() {
@@ -45,7 +45,7 @@ export default class App extends React.Component {
                 }
                 <hr/>
                 <h4>Services here!</h4>
-                <Consumer />
+                <Consumer consumerName="Dude" />
             </React.Fragment>
         )
     }
