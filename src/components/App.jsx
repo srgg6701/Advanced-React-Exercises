@@ -1,9 +1,12 @@
 import React, { Suspense } from 'react'
 import { Route, Link } from 'react-router-dom'
 import setLinksData from './Menu'
+import Service from './Services/'
+import SimpleConsumer from './Consumer/SimpleConsumer'
 import './App.css'
 
 const BigStory = React.lazy(() => import('./BigStory'));
+const Consumer = Service(SimpleConsumer);
 
 export default class App extends React.Component {
     constructor() {
@@ -40,6 +43,9 @@ export default class App extends React.Component {
                         <BigStory countMe={this.getCounted} />
                     </Suspense>
                 }
+                <hr/>
+                <h4>Services here!</h4>
+                <Consumer />
             </React.Fragment>
         )
     }
