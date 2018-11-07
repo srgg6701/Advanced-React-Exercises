@@ -2,15 +2,19 @@ import React, { Component } from 'react'
 
 export default (ChildComponent, Text) => {
     class Service extends Component {
-        
+
         componentDidMount() {
             console.log('Have I props? => ', this.props);
         }
         render() {
             return (
-                <ChildComponent {...this.props}>
-                    <h5>Hardcoded ChildComponent content here</h5>
-                </ChildComponent>
+                <fieldset>
+                    <legend><h3>HOC, exported</h3></legend>
+                    <h5>Child component:</h5>
+                    <ChildComponent {...this.props}>
+                        <p>Hardcoded ChildComponent content comes here... just some (any!) text...</p>
+                    </ChildComponent>
+                </fieldset>
             )
         }
     }

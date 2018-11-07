@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class SimpleConsumer extends Component {
+export default class SimpleConsumer2 extends Component {
     render() {
         console.log('SimpleConsumer props:', this.props);
         return (
@@ -9,12 +9,12 @@ export default class SimpleConsumer extends Component {
                 <div>
                     Hi, Dude. Yes, I am simple. Bud good one!
                 </div>
-                <h5>Children, supposedly, here</h5>
-                <p>Consumer name: {this.props.consumerName}</p>
-                <hr />
+                <h5>SimpleConsumer2</h5>
                 <fieldset>
                     <legend>this.props.children</legend>
                     <fieldset>{this.props.children}</fieldset>
+                    <hr/>
+                    <p>Last name: {this.props.consumerLastName}</p>
                 </fieldset>
             </fieldset>
         )

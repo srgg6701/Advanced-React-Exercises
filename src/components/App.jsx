@@ -3,10 +3,12 @@ import { Route, Link } from 'react-router-dom'
 import setLinksData from './Menu'
 import ServiceExported from './Services/exported'
 import SimpleConsumer from './Consumer/SimpleConsumer'
+import SimpleConsumer2 from './Consumer/SimpleConsumer2'
 import './App.css'
 
 const BigStory = React.lazy(() => import('./BigStory'));
 const Consumer = ServiceExported(SimpleConsumer);
+const Consumer2 = ServiceExported(SimpleConsumer2);
 
 export default class App extends React.Component {
     constructor() {
@@ -46,6 +48,7 @@ export default class App extends React.Component {
                 <hr/>
                 <h4>Services here!</h4>
                 <Consumer consumerName="Dude" />
+                <Consumer2 consumerLastName="Lebowsky" />
             </React.Fragment>
         )
     }
