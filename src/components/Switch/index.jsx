@@ -14,6 +14,7 @@ import React from 'react'
 const noop = () => {}
 
 class Switch extends React.Component {
+  
   render() {
     const {
       on,
@@ -47,5 +48,4 @@ class Switch extends React.Component {
     )
   }
 }
-
 export default Switch

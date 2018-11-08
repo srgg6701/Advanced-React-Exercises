@@ -3,7 +3,7 @@ import CommentBox from "./CommentBox"
 import CommentList from './CommentList'
 import Lazy from './Lazy'
 import HOCs from './HOCs'
-import Switch from './Switch'
+import Switch from './Switch/toggle1'
 
 const LINKS = [
     ['', 'Home', Home, true],
