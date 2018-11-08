@@ -48,4 +48,4 @@ class Switch extends React.Component {
   }
 }
 
-export {Switch}
+export default Switch
