@@ -9,13 +9,9 @@ export default (ChildComponent, Text) => {
         }
         render() {
             return (
-                <fieldset>
-                    <legend><h3>HOC, exported</h3></legend>
-                    <h5>Child component:</h5>
-                    <ChildComponent {...this.props}>
-                        <p>Hardcoded ChildComponent content comes here... just some (any!) text...</p>
-                    </ChildComponent>
-                </fieldset>
+                <ChildComponent {...this.props}>
+                        { Text }
+                </ChildComponent>
             )
         }
     }
