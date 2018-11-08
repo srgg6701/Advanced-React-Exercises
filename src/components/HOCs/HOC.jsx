@@ -10,7 +10,8 @@ class Consumer extends Component {
     render() {
         return (
             <React.Fragment>
-                <h4>Consumer</h4>
+                <h4>Consumer:</h4>
+                <h1>{this.props.consumerName || this.props.consumerLastName }</h1>
                 {this.props.children}
             </React.Fragment>
         )
