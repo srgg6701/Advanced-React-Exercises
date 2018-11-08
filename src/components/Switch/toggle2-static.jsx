@@ -36,8 +36,8 @@ export default class extends React.Component {
         <Switch onClick={this.switchState} on={this.state.on} />
         <hr />
         <Toggle fn={this.switchState} state={this.state.on}>
-          <Toggle.On on />
-          <Toggle.Off off />
+          <Toggle.On />
+          <Toggle.Off />
           <Toggle.Button onClick />
         </Toggle>
       </React.Fragment>)
